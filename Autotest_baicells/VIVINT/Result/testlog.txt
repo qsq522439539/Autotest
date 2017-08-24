@@ -1,0 +1,64 @@
+2017-08-22 11:38:43,078 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'888888', u'ulfile': u'ftp1x', u'chost': u'192.168.107.237', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001'} 
+2017-08-22 11:38:43,078 - test -INFO - UE args is {u'001': {'downfile': u'ftp1', 'uppath': 'F:/TMP/lp', 'localpath': 'F:/TMP/ftp0', 'serverip': u'192.168.9.79', 'clientip': u'192.168.9.79', 'upfile': u'lp'}} 
+2017-08-22 11:38:43,078 - test -INFO - Ftp setting start
+2017-08-22 11:38:43,078 - test -INFO - Ftp test is start
+2017-08-22 11:38:43,078 - test -INFO - start ping
+2017-08-22 11:38:43,092 - test -INFO - The 0  download thread start
+2017-08-22 11:38:43,092 - test -INFO - The 1  download thread start
+2017-08-22 11:38:43,092 - test -INFO - The 2  download thread start
+2017-08-22 11:38:43,092 - test -INFO - The 3  download thread start
+2017-08-22 11:38:43,092 - test -INFO - The 4  download thread start
+2017-08-22 11:38:43,092 - test -INFO - The 5  download thread start
+2017-08-22 11:38:43,108 - test -INFO - The 6  download thread start
+2017-08-22 11:38:43,108 - test -INFO - The 7  download thread start
+2017-08-22 11:39:43,108 - test -INFO - Ftp down test finsish
+2017-08-22 11:39:43,108 - test -INFO - start ping
+2017-08-22 11:39:46,737 - test -INFO - The 0 upload thread start
+2017-08-22 11:39:46,739 - test -INFO - The 1 upload thread start
+2017-08-22 11:39:46,739 - test -INFO - The 2 upload thread start
+2017-08-22 11:39:46,739 - test -INFO - The 3 upload thread start
+2017-08-22 11:39:46,740 - test -INFO - The 4 upload thread start
+2017-08-22 11:39:46,740 - test -INFO - The 5 upload thread start
+2017-08-22 11:39:46,740 - test -INFO - The 6 upload thread start
+2017-08-22 11:39:46,740 - test -INFO - The 7 upload thread start
+2017-08-22 11:40:46,742 - test -INFO - Ftp  up test finsish
+2017-08-22 11:41:16,742 - test -INFO - start ping
+2017-08-22 11:41:16,762 - test -INFO - The 0  download thread start
+2017-08-22 11:41:16,763 - test -INFO - The 1  download thread start
+2017-08-22 11:41:16,763 - test -INFO - The 2  download thread start
+2017-08-22 11:41:16,763 - test -INFO - The 3  download thread start
+2017-08-22 11:41:16,763 - test -INFO - The 4  download thread start
+2017-08-22 11:41:16,765 - test -INFO - The 5  download thread start
+2017-08-22 11:41:16,765 - test -INFO - The 6  download thread start
+2017-08-22 11:41:16,766 - test -INFO - The 7  download thread start
+2017-08-22 11:42:16,766 - test -INFO - Ftp down test finsish
+2017-08-22 11:42:16,766 - test -INFO - start ping
+2017-08-22 11:42:16,790 - test -INFO - The 0 upload thread start
+2017-08-22 11:42:16,792 - test -INFO - The 1 upload thread start
+2017-08-22 11:42:16,792 - test -INFO - The 2 upload thread start
+2017-08-22 11:42:16,793 - test -INFO - The 3 upload thread start
+2017-08-22 11:42:16,795 - test -INFO - The 4 upload thread start
+2017-08-22 11:42:16,795 - test -INFO - The 5 upload thread start
+2017-08-22 11:42:16,796 - test -INFO - The 6 upload thread start
+2017-08-22 11:42:16,796 - test -INFO - The 7 upload thread start
+2017-08-22 11:43:16,796 - test -INFO - Ftp  up test finsish
+2017-08-22 11:43:46,798 - test -INFO - start ping
+2017-08-22 11:43:50,739 - test -INFO - The 0  download thread start
+2017-08-22 11:43:50,739 - test -INFO - The 1  download thread start
+2017-08-22 11:43:50,740 - test -INFO - The 2  download thread start
+2017-08-22 11:43:50,740 - test -INFO - The 3  download thread start
+2017-08-22 11:43:50,740 - test -INFO - The 4  download thread start
+2017-08-22 11:43:50,742 - test -INFO - The 5  download thread start
+2017-08-22 11:43:50,742 - test -INFO - The 6  download thread start
+2017-08-22 11:43:50,743 - test -INFO - The 7  download thread start
+2017-08-22 11:44:50,743 - test -INFO - Ftp down test finsish
+2017-08-22 11:44:50,743 - test -INFO - start ping
+2017-08-22 11:44:50,766 - test -INFO - The 0 upload thread start
+2017-08-22 11:44:50,766 - test -INFO - The 1 upload thread start
+2017-08-22 11:44:50,767 - test -INFO - The 2 upload thread start
+2017-08-22 11:44:50,769 - test -INFO - The 3 upload thread start
+2017-08-22 11:44:50,769 - test -INFO - The 4 upload thread start
+2017-08-22 11:44:50,769 - test -INFO - The 5 upload thread start
+2017-08-22 11:44:50,770 - test -INFO - The 6 upload thread start
+2017-08-22 11:44:50,773 - test -INFO - The 7 upload thread start
+2017-08-22 11:45:50,773 - test -INFO - Ftp  up test finsish

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<test type="ftp stablity"> 
+  <list> 
+    <info> 
+      <summary>This is a args list of ue stability test.</summary>  
+      <version>1.0</version>   
+      <date>2016-06-26</date> 
+      <comonlabel>fhost fsshpw ftpuser ftppw chost csshpw cport ftpip dlfile ulfile log dotest</comonlabel>
+    </info> 
+    <dotest>001 002 003 004 005 006</dotest> 
+    <ftpserver>
+      <fhost>192.168.9.76</fhost>
+      <!--ftp server ip-->
+      <fsshpw>baicells</fsshpw>
+      <!--ftp server  root password--> 
+      <ftpuser>ftpuser</ftpuser>  
+      <!-- ftpuser name -->  
+      <ftppw>123</ftppw>  
+      <!--ftp password-->
+      <log>Result/rate.csv</log>
+      <!--ftp test rate log-->
+      <ftpip>123.1.1.x</ftpip>
+      <!--ftp server sub ip-->
+      <dlfile>ftp0x</dlfile>
+      <!--ftp downfile -->
+      <ulfile>ftp1x</ulfile>
+      <!--ftp upfile -->
+    </ftpserver>
+    <cell>
+      <chost>192.168.107.220</chost>
+      <!--cell ip-->
+      <csshpw>root123</csshpw>  
+      <!--cell ssh password-->  
+      <cport>27149</cport>  
+      <!--cell port-->
+    </cell> 
+    <ues>
+        <ue id="001">
+            <clientip>192.168.9.37</clientip>
+            <serverip>192.168.9.76</serverip>
+            <downfile>file1</downfile>
+            <localpath>F:/TMP/file1</localpath>
+            <ufile>upfile1</ufile>
+            <uppath>F:/TMP/upfile1</uppath>
+        </ue>
+        <ue id="002">
+            <clientip>192.168.9.38</clientip>
+            <serverip>192.168.9.76</serverip>
+            <downfile>file2</downfile>
+            <localpath>C:/TMP/file2</localpath>
+            <ufile>upfile2</ufile>
+            <uppath>C:/TMP/upfile2</uppath>
+        </ue>
+        <ue id="003">
+            <clientip>192.168.9.39</clientip>
+            <serverip>192.168.9.76</serverip>
+            <downfile>file3</downfile>
+            <localpath>C:/TMP/file3</localpath>
+            <ufile>upfile3</ufile>
+            <uppath>C:/TMP/upfile3</uppath>
+        </ue>
+        <ue id="004">
+            <clientip>192.168.9.40</clientip>
+            <serverip>192.168.9.76</serverip>
+            <downfile>file4</downfile>
+            <localpath>C:/TMP/file4</localpath>
+            <ufile>upfile4</ufile>
+            <uppath>C:/TMP/upfile4</uppath>
+        </ue>
+        <ue id="005">
+            <clientip>192.168.9.41</clientip>
+            <serverip>192.168.9.76</serverip>
+            <downfile>file5</downfile>
+            <localpath>C:/TMP/file5</localpath>
+            <ufile>upfile5</ufile>
+            <uppath>C:/TMP/upfile5</uppath>
+        </ue>
+        <ue id="006">
+            <clientip>192.168.107.209</clientip>
+            <serverip>192.168.9.76</serverip>
+            <downfile>file6</downfile>
+            <localpath>C:/TMP/file6</localpath>
+            <ufile>upfile6</ufile>
+            <uppath>C:/TMP/upfile6</uppath>
+        </ue>
+        <ue id="007">
+            <clientip>192.168.100.104</clientip>
+            <serverip>124.1.1.7</serverip>
+            <downfile>file7</downfile>
+            <localpath>C:/TMP/file7</localpath>
+            <ufile>upfile7</ufile>
+            <uppath>C:/TMP/upfile7</uppath>
+        </ue>
+        <ue id="008">
+            <clientip>192.168.100.104</clientip>
+            <serverip>124.1.1.8</serverip>
+            <downfile>file8</downfile>
+            <localpath>C:/TMP/file8</localpath>
+            <ufile>upfile8</ufile>
+            <uppath>C:/TMP/upfile8</uppath>
+        </ue>
+    </ues>
+  </list> 
+</test>

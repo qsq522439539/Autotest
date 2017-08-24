@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<test type="ftp stablity"> 
+  <list> 
+    <info> 
+      <summary>This is a args list of ue stability test.</summary>  
+      <version>1.0</version>   
+      <date>2016-06-26</date> 
+      <comonlabel>fhost fsshpw ftpuser ftppw chost csshpw cport ftpip dlfile ulfile log dotest</comonlabel>
+    </info> 
+    <dotest>001</dotest> 
+    <ftpserver>
+      <fhost>192.168.9.76</fhost>
+      <!--ftp server ip-->
+      <fsshpw>baicells</fsshpw>
+      <!--ftp server  root password--> 
+      <ftpuser>ftpuser</ftpuser>  
+      <!-- ftpuser name -->  
+      <ftppw>888888</ftppw>  
+      <!--ftp password-->
+      <log>Result/rate.csv</log>
+      <!--ftp test rate log-->
+      <ftpip>123.1.1.x</ftpip>
+      <!--ftp server sub ip-->
+      <dlfile>ftp0x</dlfile>
+      <!--ftp downfile -->
+      <ulfile>ftp1x</ulfile>
+      <!--ftp upfile -->
+    </ftpserver>
+    <cell>
+      <chost>192.168.107.237</chost>
+      <!--cell ip-->
+      <csshpw>root123</csshpw>  
+      <!--cell ssh password-->  
+      <cport>27149</cport>  
+      <!--cell port-->
+    </cell> 
+    <ues>
+        <ue id="001">
+            <clientip>192.168.9.79</clientip>
+            <serverip>192.168.9.79</serverip>
+            <downfile>test1</downfile>
+            <localpath>F:/TMP/test1</localpath>
+            <ufile>lp</ufile>
+            <uppath>F:/TMP/lp</uppath>
+        </ue>
+    </ues>
+  </list> 
+</test>

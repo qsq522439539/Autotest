@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<test type="ftp stablity"> 
+  <list> 
+    <info> 
+      <summary>This is a args list of ue stability test.</summary>  
+      <version>1.0</version>   
+      <date>2016-06-26</date> 
+      <comonlabel>fhost fsshpw ftpuser ftppw chost csshpw cport ftpip dlfile ulfile log adminpw</comonlabel>
+    </info>  
+    <ftpserver>
+      <fhost>192.168.9.57</fhost>
+      <!--ftp server ip-->
+      <fsshpw>baicells</fsshpw>
+      <!--ftp server  root password--> 
+      <ftpuser>ftpuser</ftpuser>  
+      <!-- ftpuser name -->  
+      <ftppw>123</ftppw>  
+      <!--ftp password-->
+      <log>Result/rate.csv</log>
+      <!--ftp test rate log-->
+      <ftpip>123.1.1.x</ftpip>
+      <!--ftp server sub ip-->
+      <dlfile>ftp0x</dlfile>
+      <!--ftp downfile -->
+      <ulfile>ftp1x</ulfile>
+      <!--ftp upfile -->
+    </ftpserver>
+    <cell>
+      <chost>192.168.107.237</chost>
+      <!--cell ip-->
+      <csshpw>root123</csshpw>  
+      <!--cell ssh password-->  
+      <cport>27149</cport>  
+      <!--cell port-->
+      <adminpw>admin</adminpw>
+    </cell> 
+    <ues>
+        <ue id="460680004800049">
+            <cpeip>109.10.10.7</cpeip>
+            <serverip>192.168.9.79</serverip>
+            <downfile>300mfile_1.txt</downfile>
+            <localpath>E:/TMP/300mfile_1.txt</localpath>
+            <upfile>upfile123</upfile> 
+            <uppath>E:/TMP/upfile123</uppath>
+        </ue>
+        <ue id="460880100000002">
+            <cpeip>166.1.1.2</cpeip>
+            <serverip>123.1.1.2</serverip>
+            <downfile>300mfile_2.txt</downfile>
+            <localpath>E:/TMP/300mfile_2.txt</localpath>
+            <upfile>upfile2</upfile> 
+            <uppath>E:/TMP/upfile2</uppath>
+        </ue>
+        <ue id="460880100000003">
+            <cpeip>166.1.1.3</cpeip>
+            <serverip>123.1.1.3</serverip>
+            <downfile>300mfile_3.txt</downfile>
+            <localpath>E:/TMP/300mfile_3.txt</localpath>
+            <upfile>upfile3</upfile> 
+            <uppath>E:/TMP/upfile3</uppath>
+        </ue>
+        <ue id="460880100000004">
+            <cpeip>166.1.1.4</cpeip>
+            <serverip>123.1.1.4</serverip>
+            <downfile>300mfile_4.txt</downfile>
+            <localpath>E:/TMP/300mfile_4.txt</localpath>
+            <upfile>upfile4</upfile> 
+            <uppath>E:/TMP/upfile4</uppath>
+        </ue>
+        <ue id="460880100000005">
+            <cpeip>166.1.1.5</cpeip>
+            <serverip>123.1.1.5</serverip>
+            <downfile>300mfile_5.txt</downfile>
+            <localpath>E:/TMP/300mfile_5.txt</localpath>
+            <upfile>upfile5</upfile> 
+            <uppath>E:/TMP/upfile5</uppath>
+        </ue>
+        <ue id="460880100000006">
+            <cpeip>166.1.1.6</cpeip>
+            <serverip>123.1.1.6</serverip>
+            <downfile>1Gfile_6.txt</downfile>
+            <localpath>E:/TMP/300mfile_6.txt</localpath>
+            <upfile>upfile6</upfile> 
+            <uppath>E:/TMP/upfile6</uppath>
+        </ue>
+        <ue id="460880100000007">
+            <cpeip>166.1.1.7</cpeip>
+            <serverip>123.1.1.7</serverip>
+            <downfile>300mfile_7.txt</downfile>
+            <localpath>E:/TMP/300mfile_7.txt</localpath>
+            <upfile>upfile7</upfile> 
+            <uppath>E:/TMP/upfile7</uppath>
+        </ue>
+        <ue id="460880100000008">
+            <cpeip>166.1.1.8</cpeip>
+            <serverip>123.1.1.8</serverip>
+            <downfile>300mfile_8.txt</downfile>
+            <localpath>E:/TMP/300mfile_8.txt</localpath>
+            <upfile>upfile1</upfile> 
+            <uppath>E:/TMP/upfile1</uppath>
+        </ue>
+        <ue id="460880100000009">
+            <cpeip>166.1.1.9</cpeip>
+            <serverip>123.1.1.9</serverip>
+            <downfile>300mfile_9.txt</downfile>
+            <localpath>E:/TMP/300mfile_9.txt</localpath>
+            <upfile>upfile9</upfile> 
+            <uppath>E:/TMP/upfile9</uppath>
+        </ue>
+        <ue id="460880100000010">
+            <cpeip>166.1.1.10</cpeip>
+            <serverip>123.1.1.10</serverip>
+            <downfile>300mfile_10.txt</downfile>
+            <localpath>E:/TMP/300mfile_10.txt</localpath>
+            <upfile>upfile10</upfile> 
+            <uppath>E:/TMP/upfile10</uppath>
+        </ue>
+        <ue id="460880100000011">
+            <cpeip>166.1.1.11</cpeip>
+            <serverip>123.1.1.11</serverip>
+            <downfile>300mfile_11.txt</downfile>
+            <localpath>E:/TMP/300mfile_11.txt</localpath>
+            <upfile>upfile11</upfile> 
+            <uppath>E:/TMP/upfile11</uppath>
+        </ue>
+        <ue id="460880100000012">
+            <cpeip>166.1.1.12</cpeip>
+            <serverip>123.1.1.12</serverip>
+            <downfile>300mfile_12.txt</downfile>
+            <localpath>E:/TMP/300mfile_12.txt</localpath>
+            <upfile>upfile12</upfile> 
+            <uppath>E:/TMP/upfile12</uppath>
+        </ue>
+        <ue id="460880100000013">
+            <cpeip>166.1.1.13</cpeip>
+            <serverip>123.1.1.13</serverip>
+            <downfile>300mfile_13.txt</downfile>
+            <localpath>E:/TMP/300mfile_13.txt</localpath>
+            <upfile>upfile13</upfile> 
+            <uppath>E:/TMP/upfile13</uppath>
+        </ue>
+       <ue id="460880100000014">
+            <cpeip>166.1.1.14</cpeip>
+            <serverip>123.1.1.14</serverip>
+            <downfile>300mfile_14.txt</downfile>
+            <localpath>E:/TMP/300mfile_14.txt</localpath>
+            <upfile>upfile14</upfile> 
+            <uppath>E:/TMP/upfile14</uppath>
+        </ue>
+        <ue id="460880100000015">
+            <cpeip>166.1.1.15</cpeip>
+            <serverip>123.1.1.15</serverip>
+            <downfile>300mfile_15.txt</downfile>
+            <localpath>E:/TMP/300mfile_15.txt</localpath>
+            <upfile>upfile15</upfile> 
+            <uppath>E:/TMP/upfile15</uppath>
+        </ue>
+       <ue id="460880100000016">
+            <cpeip>166.1.1.16</cpeip>
+            <serverip>123.1.1.16</serverip>
+            <downfile>300mfile_16.txt</downfile>
+            <localpath>E:/TMP/300mfile_16.txt</localpath>
+            <upfile>upfile16</upfile> 
+            <uppath>E:/TMP/upfile16</uppath>
+        </ue>
+        <ue id="460880100000017">
+            <cpeip>166.1.1.17</cpeip>
+            <serverip>123.1.1.17</serverip>
+            <downfile>300mfile_17.txt</downfile>
+            <localpath>E:/TMP/300mfile_17.txt</localpath>
+            <upfile>upfile17</upfile> 
+            <uppath>E:/TMP/upfile17</uppath>
+        </ue>
+        <ue id="460880100000018">
+            <cpeip>166.1.1.18</cpeip>
+            <serverip>123.1.1.18</serverip>
+            <downfile>300mfile_18.txt</downfile>
+            <localpath>E:/TMP/300mfile_18.txt</localpath>
+            <upfile>upfile18</upfile> 
+            <uppath>E:/TMP/upfile18</uppath>
+        </ue>
+        <ue id="460880100000019">
+            <cpeip>166.1.1.19</cpeip>
+            <serverip>123.1.1.19</serverip>
+            <downfile>300mfile_19.txt</downfile>
+            <localpath>E:/TMP/300mfile_19.txt</localpath>
+            <upfile>upfile19</upfile> 
+            <uppath>E:/TMP/upfile19</uppath>
+        </ue>
+        <ue id="460880100000020">
+            <cpeip>166.1.1.20</cpeip>
+            <serverip>123.1.1.20</serverip>
+            <downfile>300mfile_20.txt</downfile>
+            <localpath>E:/TMP/300mfile_20.txt</localpath>
+            <upfile>upfile20</upfile> 
+            <uppath>E:/TMP/upfile20</uppath>
+        </ue>
+        <ue id="460880100000021">
+            <cpeip>166.1.1.21</cpeip>
+            <serverip>123.1.1.21</serverip>
+            <downfile>300mfile_21.txt</downfile>
+            <localpath>E:/TMP/300mfile_21.txt</localpath>
+            <upfile>upfile21</upfile> 
+            <uppath>E:/TMP/upfile21</uppath>
+        </ue>
+        <ue id="460880100000022">
+            <cpeip>166.1.1.22</cpeip>
+            <serverip>123.1.1.22</serverip>
+            <downfile>300mfile_22.txt</downfile>
+            <localpath>E:/TMP/300mfile_22.txt</localpath>
+            <upfile>upfile22</upfile> 
+            <uppath>E:/TMP/upfile22</uppath>
+        </ue>
+        <ue id="460880100000023">
+            <cpeip>166.1.1.23</cpeip>
+            <serverip>123.1.1.23</serverip>
+            <downfile>300mfile_23.txt</downfile>
+            <localpath>E:/TMP/300mfile_23.txt</localpath>
+            <upfile>upfile23</upfile> 
+            <uppath>E:/TMP/upfile23</uppath>
+        </ue>
+        <ue id="460880100000024">
+            <cpeip>166.1.1.24</cpeip>
+            <serverip>123.1.1.24</serverip>
+            <downfile>300mfile_24.txt</downfile>
+            <localpath>E:/TMP/300mfile_24.txt</localpath>
+            <upfile>upfile24</upfile> 
+            <uppath>E:/TMP/upfile24</uppath>
+        </ue>
+        <ue id="460880100000025">
+            <cpeip>166.1.1.25</cpeip>
+            <serverip>123.1.1.25</serverip>
+            <downfile>300mfile_25.txt</downfile>
+            <localpath>E:/TMP/300mfile_25.txt</localpath>
+            <upfile>upfile25</upfile> 
+            <uppath>E:/TMP/upfile25</uppath>
+        </ue>
+        <ue id="460880100000026">
+            <cpeip>166.1.1.26</cpeip>
+            <serverip>123.1.1.26</serverip>
+            <downfile>300mfile_26.txt</downfile>
+            <localpath>E:/TMP/300mfile_26.txt</localpath>
+            <upfile>upfile26</upfile> 
+            <uppath>E:/TMP/upfile26</uppath>
+        </ue>
+        <ue id="460880100000027">
+            <cpeip>166.1.1.27</cpeip>
+            <serverip>123.1.1.27</serverip>
+            <downfile>300mfile_27.txt</downfile>
+            <localpath>E:/TMP/300mfile_27.txt</localpath>
+            <upfile>upfile27</upfile> 
+            <uppath>E:/TMP/upfile27</uppath>
+        </ue>
+        <ue id="460880100000028">
+            <cpeip>166.1.1.28</cpeip>
+            <serverip>123.1.1.28</serverip>
+            <downfile>300mfile_28.txt</downfile>
+            <localpath>E:/TMP/300mfile_28.txt</localpath>
+            <upfile>upfile28</upfile> 
+            <uppath>E:/TMP/upfile28</uppath>
+        </ue>
+        <ue id="460880100000029">
+            <cpeip>166.1.1.29</cpeip>
+            <serverip>123.1.1.29</serverip>
+            <downfile>300mfile_29.txt</downfile>
+            <localpath>E:/TMP/300mfile_29.txt</localpath>
+            <upfile>upfile29</upfile> 
+            <uppath>E:/TMP/upfile29</uppath>
+        </ue>
+        <ue id="460880100000030">
+            <cpeip>166.1.1.30</cpeip>
+            <serverip>123.1.1.30</serverip>
+            <downfile>300mfile_30.txt</downfile>
+            <localpath>E:/TMP/300mfile_30.txt</localpath>
+            <upfile>upfile30</upfile> 
+            <uppath>E:/TMP/upfile30</uppath>
+        </ue>
+        <ue id="460880100000031">
+            <cpeip>166.1.1.31</cpeip>
+            <serverip>123.1.1.31</serverip>
+            <downfile>300mfile_31.txt</downfile>
+            <localpath>E:/TMP/300mfile_31.txt</localpath>
+            <upfile>upfile31</upfile> 
+            <uppath>E:/TMP/upfile31</uppath>
+        </ue>
+        <ue id="460880100000032">
+            <cpeip>166.1.1.32</cpeip>
+            <serverip>123.1.1.32</serverip>
+            <downfile>300mfile_32.txt</downfile>
+            <localpath>E:/TMP/300mfile_32.txt</localpath>
+            <upfile>upfile32</upfile> 
+            <uppath>E:/TMP/upfile32</uppath>
+        </ue>
+        <ue id="460880100000033">
+            <cpeip>166.1.1.1</cpeip>
+            <serverip>192.168.9.57</serverip>
+            <downfile>300mfile_1.txt</downfile>
+            <localpath>E:/TMP/300mfile_1.txt</localpath>
+            <upfile>upfile123</upfile> 
+            <uppath>E:/TMP/upfile123</uppath>
+        </ue>
+        <ue id="460880100000034">
+            <cpeip>166.1.1.2</cpeip>
+            <serverip>123.1.1.2</serverip>
+            <downfile>300mfile_2.txt</downfile>
+            <localpath>E:/TMP/300mfile_2.txt</localpath>
+            <upfile>upfile2</upfile> 
+            <uppath>E:/TMP/upfile2</uppath>
+        </ue>
+        <ue id="460880100000035">
+            <cpeip>166.1.1.4</cpeip>
+            <serverip>123.1.1.4</serverip>
+            <downfile>300mfile_4.txt</downfile>
+            <localpath>E:/TMP/300mfile_4.txt</localpath>
+            <upfile>upfile4</upfile> 
+            <uppath>E:/TMP/upfile4</uppath>
+        </ue>
+        <ue id="460880100000036">
+            <cpeip>166.1.1.5</cpeip>
+            <serverip>123.1.1.5</serverip>
+            <downfile>300mfile_5.txt</downfile>
+            <localpath>E:/TMP/300mfile_5.txt</localpath>
+            <upfile>upfile5</upfile> 
+            <uppath>E:/TMP/upfile5</uppath>
+        </ue>
+        <ue id="460880100000037">
+            <cpeip>166.1.1.6</cpeip>
+            <serverip>123.1.1.6</serverip>
+            <downfile>1Gfile_6.txt</downfile>
+            <localpath>E:/TMP/300mfile_6.txt</localpath>
+            <upfile>upfile6</upfile> 
+            <uppath>E:/TMP/upfile6</uppath>
+        </ue>
+        <ue id="460880100000038">
+            <cpeip>166.1.1.7</cpeip>
+            <serverip>123.1.1.7</serverip>
+            <downfile>300mfile_7.txt</downfile>
+            <localpath>E:/TMP/300mfile_7.txt</localpath>
+            <upfile>upfile7</upfile> 
+            <uppath>E:/TMP/upfile7</uppath>
+        </ue>
+        <ue id="460880100000039">
+            <cpeip>166.1.1.8</cpeip>
+            <serverip>123.1.1.8</serverip>
+            <downfile>300mfile_8.txt</downfile>
+            <localpath>E:/TMP/300mfile_8.txt</localpath>
+            <upfile>upfile1</upfile> 
+            <uppath>E:/TMP/upfile1</uppath>
+        </ue>
+        <ue id="460880100000040">
+            <cpeip>166.1.1.9</cpeip>
+            <serverip>123.1.1.9</serverip>
+            <downfile>300mfile_9.txt</downfile>
+            <localpath>E:/TMP/300mfile_9.txt</localpath>
+            <upfile>upfile9</upfile> 
+            <uppath>E:/TMP/upfile9</uppath>
+        </ue>
+        <ue id="460880100000041">
+            <cpeip>166.1.1.10</cpeip>
+            <serverip>123.1.1.10</serverip>
+            <downfile>300mfile_10.txt</downfile>
+            <localpath>E:/TMP/300mfile_10.txt</localpath>
+            <upfile>upfile10</upfile> 
+            <uppath>E:/TMP/upfile10</uppath>
+        </ue>
+        <ue id="460880100000042">
+            <cpeip>166.1.1.11</cpeip>
+            <serverip>123.1.1.11</serverip>
+            <downfile>300mfile_11.txt</downfile>
+            <localpath>E:/TMP/300mfile_11.txt</localpath>
+            <upfile>upfile11</upfile> 
+            <uppath>E:/TMP/upfile11</uppath>
+        </ue>
+        <ue id="460880100000043">
+            <cpeip>166.1.1.12</cpeip>
+            <serverip>123.1.1.12</serverip>
+            <downfile>300mfile_12.txt</downfile>
+            <localpath>E:/TMP/300mfile_12.txt</localpath>
+            <upfile>upfile12</upfile> 
+            <uppath>E:/TMP/upfile12</uppath>
+        </ue>
+        <ue id="460880100000044">
+            <cpeip>166.1.1.13</cpeip>
+            <serverip>123.1.1.13</serverip>
+            <downfile>300mfile_13.txt</downfile>
+            <localpath>E:/TMP/300mfile_13.txt</localpath>
+            <upfile>upfile13</upfile> 
+            <uppath>E:/TMP/upfile13</uppath>
+        </ue>
+       <ue id="460880100000045">
+            <cpeip>166.1.1.14</cpeip>
+            <serverip>123.1.1.14</serverip>
+            <downfile>300mfile_14.txt</downfile>
+            <localpath>E:/TMP/300mfile_14.txt</localpath>
+            <upfile>upfile14</upfile> 
+            <uppath>E:/TMP/upfile14</uppath>
+        </ue>
+        <ue id="460880100000046">
+            <cpeip>166.1.1.15</cpeip>
+            <serverip>123.1.1.15</serverip>
+            <downfile>300mfile_15.txt</downfile>
+            <localpath>E:/TMP/300mfile_15.txt</localpath>
+            <upfile>upfile15</upfile> 
+            <uppath>E:/TMP/upfile15</uppath>
+        </ue>
+       <ue id="460880100000047">
+            <cpeip>166.1.1.16</cpeip>
+            <serverip>123.1.1.16</serverip>
+            <downfile>300mfile_16.txt</downfile>
+            <localpath>E:/TMP/300mfile_16.txt</localpath>
+            <upfile>upfile16</upfile> 
+            <uppath>E:/TMP/upfile16</uppath>
+        </ue>
+        <ue id="460880100000048">
+            <cpeip>166.1.1.17</cpeip>
+            <serverip>123.1.1.17</serverip>
+            <downfile>300mfile_17.txt</downfile>
+            <localpath>E:/TMP/300mfile_17.txt</localpath>
+            <upfile>upfile17</upfile> 
+            <uppath>E:/TMP/upfile17</uppath>
+        </ue>
+        <ue id="460880100000049">
+            <cpeip>166.1.1.18</cpeip>
+            <serverip>123.1.1.18</serverip>
+            <downfile>300mfile_18.txt</downfile>
+            <localpath>E:/TMP/300mfile_18.txt</localpath>
+            <upfile>upfile18</upfile> 
+            <uppath>E:/TMP/upfile18</uppath>
+        </ue>
+        <ue id="460880100000050">
+            <cpeip>166.1.1.19</cpeip>
+            <serverip>123.1.1.19</serverip>
+            <downfile>300mfile_19.txt</downfile>
+            <localpath>E:/TMP/300mfile_19.txt</localpath>
+            <upfile>upfile19</upfile> 
+            <uppath>E:/TMP/upfile19</uppath>
+        </ue>
+        <ue id="460880100000051">
+            <cpeip>166.1.1.20</cpeip>
+            <serverip>123.1.1.20</serverip>
+            <downfile>300mfile_20.txt</downfile>
+            <localpath>E:/TMP/300mfile_20.txt</localpath>
+            <upfile>upfile20</upfile> 
+            <uppath>E:/TMP/upfile20</uppath>
+        </ue>
+        <ue id="460880100000052">
+            <cpeip>166.1.1.21</cpeip>
+            <serverip>123.1.1.21</serverip>
+            <downfile>300mfile_21.txt</downfile>
+            <localpath>E:/TMP/300mfile_21.txt</localpath>
+            <upfile>upfile21</upfile> 
+            <uppath>E:/TMP/upfile21</uppath>
+        </ue>
+        <ue id="460880100000053">
+            <cpeip>166.1.1.22</cpeip>
+            <serverip>123.1.1.22</serverip>
+            <downfile>300mfile_22.txt</downfile>
+            <localpath>E:/TMP/300mfile_22.txt</localpath>
+            <upfile>upfile22</upfile> 
+            <uppath>E:/TMP/upfile22</uppath>
+        </ue>
+        <ue id="460880100000054">
+            <cpeip>166.1.1.23</cpeip>
+            <serverip>123.1.1.23</serverip>
+            <downfile>300mfile_23.txt</downfile>
+            <localpath>E:/TMP/300mfile_23.txt</localpath>
+            <upfile>upfile23</upfile> 
+            <uppath>E:/TMP/upfile23</uppath>
+        </ue>
+        <ue id="460880100000055">
+            <cpeip>166.1.1.24</cpeip>
+            <serverip>123.1.1.24</serverip>
+            <downfile>300mfile_24.txt</downfile>
+            <localpath>E:/TMP/300mfile_24.txt</localpath>
+            <upfile>upfile24</upfile> 
+            <uppath>E:/TMP/upfile24</uppath>
+        </ue>
+        <ue id="460880100000056">
+            <cpeip>166.1.1.25</cpeip>
+            <serverip>123.1.1.25</serverip>
+            <downfile>300mfile_25.txt</downfile>
+            <localpath>E:/TMP/300mfile_25.txt</localpath>
+            <upfile>upfile25</upfile> 
+            <uppath>E:/TMP/upfile25</uppath>
+        </ue>
+        <ue id="460880100000057">
+            <cpeip>166.1.1.26</cpeip>
+            <serverip>123.1.1.26</serverip>
+            <downfile>300mfile_26.txt</downfile>
+            <localpath>E:/TMP/300mfile_26.txt</localpath>
+            <upfile>upfile26</upfile> 
+            <uppath>E:/TMP/upfile26</uppath>
+        </ue>
+        <ue id="460880100000058">
+            <cpeip>166.1.1.27</cpeip>
+            <serverip>123.1.1.27</serverip>
+            <downfile>300mfile_27.txt</downfile>
+            <localpath>E:/TMP/300mfile_27.txt</localpath>
+            <upfile>upfile27</upfile> 
+            <uppath>E:/TMP/upfile27</uppath>
+        </ue>
+        <ue id="460880100000059">
+            <cpeip>166.1.1.28</cpeip>
+            <serverip>123.1.1.28</serverip>
+            <downfile>300mfile_28.txt</downfile>
+            <localpath>E:/TMP/300mfile_28.txt</localpath>
+            <upfile>upfile28</upfile> 
+            <uppath>E:/TMP/upfile28</uppath>
+        </ue>
+        <ue id="460880100000060">
+            <cpeip>166.1.1.29</cpeip>
+            <serverip>123.1.1.29</serverip>
+            <downfile>300mfile_29.txt</downfile>
+            <localpath>E:/TMP/300mfile_29.txt</localpath>
+            <upfile>upfile29</upfile> 
+            <uppath>E:/TMP/upfile29</uppath>
+        </ue>
+        <ue id="460880100000061">
+            <cpeip>166.1.1.30</cpeip>
+            <serverip>123.1.1.30</serverip>
+            <downfile>300mfile_30.txt</downfile>
+            <localpath>E:/TMP/300mfile_30.txt</localpath>
+            <upfile>upfile30</upfile> 
+            <uppath>E:/TMP/upfile30</uppath>
+        </ue>
+        <ue id="460880100000062">
+            <cpeip>166.1.1.31</cpeip>
+            <serverip>123.1.1.31</serverip>
+            <downfile>300mfile_31.txt</downfile>
+            <localpath>E:/TMP/300mfile_31.txt</localpath>
+            <upfile>upfile31</upfile> 
+            <uppath>E:/TMP/upfile31</uppath>
+        </ue>
+        <ue id="460880100000063">
+            <cpeip>166.1.1.32</cpeip>
+            <serverip>123.1.1.32</serverip>
+            <downfile>300mfile_32.txt</downfile>
+            <localpath>E:/TMP/300mfile_32.txt</localpath>
+            <upfile>upfile32</upfile> 
+            <uppath>E:/TMP/upfile32</uppath>
+        </ue>
+        <ue id="460880100000064">
+            <cpeip>166.1.1.1</cpeip>
+            <serverip>192.168.9.57</serverip>
+            <downfile>300mfile_1.txt</downfile>
+            <localpath>E:/TMP/300mfile_1.txt</localpath>
+            <upfile>upfile123</upfile> 
+            <uppath>E:/TMP/upfile123</uppath>
+        </ue>
+        <ue id="460880100000065">
+            <cpeip>166.1.1.2</cpeip>
+            <serverip>123.1.1.2</serverip>
+            <downfile>300mfile_2.txt</downfile>
+            <localpath>E:/TMP/300mfile_2.txt</localpath>
+            <upfile>upfile2</upfile> 
+            <uppath>E:/TMP/upfile2</uppath>
+        </ue>
+        <ue id="460880100000066">
+            <cpeip>166.1.1.3</cpeip>
+            <serverip>123.1.1.3</serverip>
+            <downfile>300mfile_3.txt</downfile>
+            <localpath>E:/TMP/300mfile_3.txt</localpath>
+            <upfile>upfile3</upfile> 
+            <uppath>E:/TMP/upfile3</uppath>
+        </ue>
+        <ue id="460880100000067">
+            <cpeip>166.1.1.4</cpeip>
+            <serverip>123.1.1.4</serverip>
+            <downfile>300mfile_4.txt</downfile>
+            <localpath>E:/TMP/300mfile_4.txt</localpath>
+            <upfile>upfile4</upfile> 
+            <uppath>E:/TMP/upfile4</uppath>
+        </ue>
+        <ue id="460880100000068">
+            <cpeip>166.1.1.5</cpeip>
+            <serverip>123.1.1.5</serverip>
+            <downfile>300mfile_5.txt</downfile>
+            <localpath>E:/TMP/300mfile_5.txt</localpath>
+            <upfile>upfile5</upfile> 
+            <uppath>E:/TMP/upfile5</uppath>
+        </ue>
+        <ue id="460880100000069">
+            <cpeip>166.1.1.6</cpeip>
+            <serverip>123.1.1.6</serverip>
+            <downfile>1Gfile_6.txt</downfile>
+            <localpath>E:/TMP/300mfile_6.txt</localpath>
+            <upfile>upfile6</upfile> 
+            <uppath>E:/TMP/upfile6</uppath>
+        </ue>
+        <ue id="460880100000070">
+            <cpeip>166.1.1.7</cpeip>
+            <serverip>123.1.1.7</serverip>
+            <downfile>300mfile_7.txt</downfile>
+            <localpath>E:/TMP/300mfile_7.txt</localpath>
+            <upfile>upfile7</upfile> 
+            <uppath>E:/TMP/upfile7</uppath>
+        </ue>
+        <ue id="460880100000071">
+            <cpeip>166.1.1.8</cpeip>
+            <serverip>123.1.1.8</serverip>
+            <downfile>300mfile_8.txt</downfile>
+            <localpath>E:/TMP/300mfile_8.txt</localpath>
+            <upfile>upfile1</upfile> 
+            <uppath>E:/TMP/upfile1</uppath>
+        </ue>
+        <ue id="460880100000072">
+            <cpeip>166.1.1.9</cpeip>
+            <serverip>123.1.1.9</serverip>
+            <downfile>300mfile_9.txt</downfile>
+            <localpath>E:/TMP/300mfile_9.txt</localpath>
+            <upfile>upfile9</upfile> 
+            <uppath>E:/TMP/upfile9</uppath>
+        </ue>
+        <ue id="460880100000073">
+            <cpeip>166.1.1.10</cpeip>
+            <serverip>123.1.1.10</serverip>
+            <downfile>300mfile_10.txt</downfile>
+            <localpath>E:/TMP/300mfile_10.txt</localpath>
+            <upfile>upfile10</upfile> 
+            <uppath>E:/TMP/upfile10</uppath>
+        </ue>
+        <ue id="460880100000074">
+            <cpeip>166.1.1.11</cpeip>
+            <serverip>123.1.1.11</serverip>
+            <downfile>300mfile_11.txt</downfile>
+            <localpath>E:/TMP/300mfile_11.txt</localpath>
+            <upfile>upfile11</upfile> 
+            <uppath>E:/TMP/upfile11</uppath>
+        </ue>
+        <ue id="460880100000075">
+            <cpeip>166.1.1.12</cpeip>
+            <serverip>123.1.1.12</serverip>
+            <downfile>300mfile_12.txt</downfile>
+            <localpath>E:/TMP/300mfile_12.txt</localpath>
+            <upfile>upfile12</upfile> 
+            <uppath>E:/TMP/upfile12</uppath>
+        </ue>
+        <ue id="460880100000076">
+            <cpeip>166.1.1.13</cpeip>
+            <serverip>123.1.1.13</serverip>
+            <downfile>300mfile_13.txt</downfile>
+            <localpath>E:/TMP/300mfile_13.txt</localpath>
+            <upfile>upfile13</upfile> 
+            <uppath>E:/TMP/upfile13</uppath>
+        </ue>
+       <ue id="460880100000077">
+            <cpeip>166.1.1.14</cpeip>
+            <serverip>123.1.1.14</serverip>
+            <downfile>300mfile_14.txt</downfile>
+            <localpath>E:/TMP/300mfile_14.txt</localpath>
+            <upfile>upfile14</upfile> 
+            <uppath>E:/TMP/upfile14</uppath>
+        </ue>
+        <ue id="460880100000078">
+            <cpeip>166.1.1.15</cpeip>
+            <serverip>123.1.1.15</serverip>
+            <downfile>300mfile_15.txt</downfile>
+            <localpath>E:/TMP/300mfile_15.txt</localpath>
+            <upfile>upfile15</upfile> 
+            <uppath>E:/TMP/upfile15</uppath>
+        </ue>
+       <ue id="460880100000079">
+            <cpeip>166.1.1.16</cpeip>
+            <serverip>123.1.1.16</serverip>
+            <downfile>300mfile_16.txt</downfile>
+            <localpath>E:/TMP/300mfile_16.txt</localpath>
+            <upfile>upfile16</upfile> 
+            <uppath>E:/TMP/upfile16</uppath>
+        </ue>
+        <ue id="460880100000080">
+            <cpeip>166.1.1.17</cpeip>
+            <serverip>123.1.1.17</serverip>
+            <downfile>300mfile_17.txt</downfile>
+            <localpath>E:/TMP/300mfile_17.txt</localpath>
+            <upfile>upfile17</upfile> 
+            <uppath>E:/TMP/upfile17</uppath>
+        </ue>
+        <ue id="460880100000081">
+            <cpeip>166.1.1.18</cpeip>
+            <serverip>123.1.1.18</serverip>
+            <downfile>300mfile_18.txt</downfile>
+            <localpath>E:/TMP/300mfile_18.txt</localpath>
+            <upfile>upfile18</upfile> 
+            <uppath>E:/TMP/upfile18</uppath>
+        </ue>
+        <ue id="460880100000082">
+            <cpeip>166.1.1.19</cpeip>
+            <serverip>123.1.1.19</serverip>
+            <downfile>300mfile_19.txt</downfile>
+            <localpath>E:/TMP/300mfile_19.txt</localpath>
+            <upfile>upfile19</upfile> 
+            <uppath>E:/TMP/upfile19</uppath>
+        </ue>
+        <ue id="460880100000083">
+            <cpeip>166.1.1.20</cpeip>
+            <serverip>123.1.1.20</serverip>
+            <downfile>300mfile_20.txt</downfile>
+            <localpath>E:/TMP/300mfile_20.txt</localpath>
+            <upfile>upfile20</upfile> 
+            <uppath>E:/TMP/upfile20</uppath>
+        </ue>
+        <ue id="460880100000084">
+            <cpeip>166.1.1.21</cpeip>
+            <serverip>123.1.1.21</serverip>
+            <downfile>300mfile_21.txt</downfile>
+            <localpath>E:/TMP/300mfile_21.txt</localpath>
+            <upfile>upfile21</upfile> 
+            <uppath>E:/TMP/upfile21</uppath>
+        </ue>
+        <ue id="460880100000085">
+            <cpeip>166.1.1.22</cpeip>
+            <serverip>123.1.1.22</serverip>
+            <downfile>300mfile_22.txt</downfile>
+            <localpath>E:/TMP/300mfile_22.txt</localpath>
+            <upfile>upfile22</upfile> 
+            <uppath>E:/TMP/upfile22</uppath>
+        </ue>
+        <ue id="460880100000086">
+            <cpeip>166.1.1.23</cpeip>
+            <serverip>123.1.1.23</serverip>
+            <downfile>300mfile_23.txt</downfile>
+            <localpath>E:/TMP/300mfile_23.txt</localpath>
+            <upfile>upfile23</upfile> 
+            <uppath>E:/TMP/upfile23</uppath>
+        </ue>
+        <ue id="460880100000087">
+            <cpeip>166.1.1.24</cpeip>
+            <serverip>123.1.1.24</serverip>
+            <downfile>300mfile_24.txt</downfile>
+            <localpath>E:/TMP/300mfile_24.txt</localpath>
+            <upfile>upfile24</upfile> 
+            <uppath>E:/TMP/upfile24</uppath>
+        </ue>
+        <ue id="460880100000088">
+            <cpeip>166.1.1.25</cpeip>
+            <serverip>123.1.1.25</serverip>
+            <downfile>300mfile_25.txt</downfile>
+            <localpath>E:/TMP/300mfile_25.txt</localpath>
+            <upfile>upfile25</upfile> 
+            <uppath>E:/TMP/upfile25</uppath>
+        </ue>
+        <ue id="460880100000089">
+            <cpeip>166.1.1.26</cpeip>
+            <serverip>123.1.1.26</serverip>
+            <downfile>300mfile_26.txt</downfile>
+            <localpath>E:/TMP/300mfile_26.txt</localpath>
+            <upfile>upfile26</upfile> 
+            <uppath>E:/TMP/upfile26</uppath>
+        </ue>
+        <ue id="460880100000090">
+            <cpeip>166.1.1.27</cpeip>
+            <serverip>123.1.1.27</serverip>
+            <downfile>300mfile_27.txt</downfile>
+            <localpath>E:/TMP/300mfile_27.txt</localpath>
+            <upfile>upfile27</upfile> 
+            <uppath>E:/TMP/upfile27</uppath>
+        </ue>
+        <ue id="460880100000091">
+            <cpeip>166.1.1.28</cpeip>
+            <serverip>123.1.1.28</serverip>
+            <downfile>300mfile_28.txt</downfile>
+            <localpath>E:/TMP/300mfile_28.txt</localpath>
+            <upfile>upfile28</upfile> 
+            <uppath>E:/TMP/upfile28</uppath>
+        </ue>
+        <ue id="460880100000092">
+            <cpeip>166.1.1.29</cpeip>
+            <serverip>123.1.1.29</serverip>
+            <downfile>300mfile_29.txt</downfile>
+            <localpath>E:/TMP/300mfile_29.txt</localpath>
+            <upfile>upfile29</upfile> 
+            <uppath>E:/TMP/upfile29</uppath>
+        </ue>
+        <ue id="460880100000093">
+            <cpeip>166.1.1.30</cpeip>
+            <serverip>123.1.1.30</serverip>
+            <downfile>300mfile_30.txt</downfile>
+            <localpath>E:/TMP/300mfile_30.txt</localpath>
+            <upfile>upfile30</upfile> 
+            <uppath>E:/TMP/upfile30</uppath>
+        </ue>
+        <ue id="460880100000094">
+            <cpeip>166.1.1.31</cpeip>
+            <serverip>123.1.1.31</serverip>
+            <downfile>300mfile_31.txt</downfile>
+            <localpath>E:/TMP/300mfile_31.txt</localpath>
+            <upfile>upfile31</upfile> 
+            <uppath>E:/TMP/upfile31</uppath>
+        </ue>
+        <ue id="460880100000095">
+            <cpeip>166.1.1.32</cpeip>
+            <serverip>123.1.1.32</serverip>
+            <downfile>300mfile_32.txt</downfile>
+            <localpath>E:/TMP/300mfile_32.txt</localpath>
+            <upfile>upfile32</upfile> 
+            <uppath>E:/TMP/upfile32</uppath>
+        </ue>
+        <ue id="460880100000096">
+            <cpeip>166.1.1.1</cpeip>
+            <serverip>192.168.9.57</serverip>
+            <downfile>300mfile_1.txt</downfile>
+            <localpath>E:/TMP/300mfile_1.txt</localpath>
+            <upfile>upfile123</upfile> 
+            <uppath>E:/TMP/upfile123</uppath>
+        </ue>
+    </ues>
+  </list> 
+</test>

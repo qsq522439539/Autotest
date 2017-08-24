@@ -1,0 +1,170 @@
+2017-08-24 11:32:08,400 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'123', u'ulfile': u'ftp1x', u'chost': u'192.168.9.42', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001 002 003 004 005 006'} 
+2017-08-24 11:32:08,401 - test -INFO - UE args is {u'003': {'downfile': u'file3', 'uppath': 'C:/TMP/upfile3', 'localpath': 'C:/TMP/file3', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.39', 'upfile': u'upfile3'}, u'002': {'downfile': u'file2', 'uppath': 'C:/TMP/upfile2', 'localpath': 'C:/TMP/file2', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.38', 'upfile': u'upfile2'}, u'001': {'downfile': u'file1', 'uppath': 'F:/TMP/upfile1', 'localpath': 'F:/TMP/file1', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.37', 'upfile': u'upfile1'}, u'007': {'downfile': u'file7', 'uppath': 'C:/TMP/upfile7', 'localpath': 'C:/TMP/file7', 'serverip': u'124.1.1.7', 'clientip': u'192.168.100.104', 'upfile': u'upfile7'}, u'006': {'downfile': u'file6', 'uppath': 'C:/TMP/upfile6', 'localpath': 'C:/TMP/file6', 'serverip': u'192.168.9.76', 'clientip': u'192.168.107.209', 'upfile': u'upfile6'}, u'005': {'downfile': u'file5', 'uppath': 'C:/TMP/upfile5', 'localpath': 'C:/TMP/file5', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.41', 'upfile': u'upfile5'}, u'004': {'downfile': u'file4', 'uppath': 'C:/TMP/upfile4', 'localpath': 'C:/TMP/file4', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.40', 'upfile': u'upfile4'}, u'008': {'downfile': u'file8', 'uppath': 'C:/TMP/upfile8', 'localpath': 'C:/TMP/file8', 'serverip': u'124.1.1.8', 'clientip': u'192.168.100.104', 'upfile': u'upfile8'}} 
+2017-08-24 11:32:08,401 - test -INFO - Ftp setting start
+2017-08-24 11:33:45,756 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'123', u'ulfile': u'ftp1x', u'chost': u'192.168.9.42', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001 002 003 004 005 006'} 
+2017-08-24 11:33:45,776 - test -INFO - UE args is {u'003': {'downfile': u'file3', 'uppath': 'C:/TMP/upfile3', 'localpath': 'C:/TMP/file3', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.39', 'upfile': u'upfile3'}, u'002': {'downfile': u'file2', 'uppath': 'C:/TMP/upfile2', 'localpath': 'C:/TMP/file2', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.38', 'upfile': u'upfile2'}, u'001': {'downfile': u'file1', 'uppath': 'F:/TMP/upfile1', 'localpath': 'F:/TMP/file1', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.37', 'upfile': u'upfile1'}, u'007': {'downfile': u'file7', 'uppath': 'C:/TMP/upfile7', 'localpath': 'C:/TMP/file7', 'serverip': u'124.1.1.7', 'clientip': u'192.168.100.104', 'upfile': u'upfile7'}, u'006': {'downfile': u'file6', 'uppath': 'C:/TMP/upfile6', 'localpath': 'C:/TMP/file6', 'serverip': u'192.168.9.76', 'clientip': u'192.168.107.209', 'upfile': u'upfile6'}, u'005': {'downfile': u'file5', 'uppath': 'C:/TMP/upfile5', 'localpath': 'C:/TMP/file5', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.41', 'upfile': u'upfile5'}, u'004': {'downfile': u'file4', 'uppath': 'C:/TMP/upfile4', 'localpath': 'C:/TMP/file4', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.40', 'upfile': u'upfile4'}, u'008': {'downfile': u'file8', 'uppath': 'C:/TMP/upfile8', 'localpath': 'C:/TMP/file8', 'serverip': u'124.1.1.8', 'clientip': u'192.168.100.104', 'upfile': u'upfile8'}} 
+2017-08-24 11:33:45,776 - test -INFO - Ftp setting start
+2017-08-24 11:33:46,354 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:33:46,802 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:33:47,266 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:33:47,687 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:33:48,153 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:33:48,592 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:33:49,015 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:33:49,447 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:33:49,845 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:33:50,263 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:33:50,651 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:33:51,102 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:33:51,539 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:33:51,920 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:33:52,369 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:33:52,795 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:33:53,220 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:33:53,658 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:33:54,078 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:33:54,540 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:33:54,973 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:33:55,365 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:33:55,772 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:33:56,359 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:33:56,763 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:33:57,131 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:33:57,523 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:33:57,967 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:33:58,411 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:33:58,793 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:33:59,237 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:33:59,657 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:34:00,107 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:34:00,532 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:34:00,947 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:34:01,342 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:34:01,342 - test -INFO - Ftp test is start
+2017-08-24 11:34:37,966 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'123', u'ulfile': u'ftp1x', u'chost': u'192.168.9.42', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001 002 003 004 005 006'} 
+2017-08-24 11:34:37,967 - test -INFO - UE args is {u'003': {'downfile': u'file3', 'uppath': 'C:/TMP/upfile3', 'localpath': 'C:/TMP/file3', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.39', 'upfile': u'upfile3'}, u'002': {'downfile': u'file2', 'uppath': 'C:/TMP/upfile2', 'localpath': 'C:/TMP/file2', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.38', 'upfile': u'upfile2'}, u'001': {'downfile': u'file1', 'uppath': 'F:/TMP/upfile1', 'localpath': 'F:/TMP/file1', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.37', 'upfile': u'upfile1'}, u'007': {'downfile': u'file7', 'uppath': 'C:/TMP/upfile7', 'localpath': 'C:/TMP/file7', 'serverip': u'124.1.1.7', 'clientip': u'192.168.100.104', 'upfile': u'upfile7'}, u'006': {'downfile': u'file6', 'uppath': 'C:/TMP/upfile6', 'localpath': 'C:/TMP/file6', 'serverip': u'192.168.9.76', 'clientip': u'192.168.107.209', 'upfile': u'upfile6'}, u'005': {'downfile': u'file5', 'uppath': 'C:/TMP/upfile5', 'localpath': 'C:/TMP/file5', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.41', 'upfile': u'upfile5'}, u'004': {'downfile': u'file4', 'uppath': 'C:/TMP/upfile4', 'localpath': 'C:/TMP/file4', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.40', 'upfile': u'upfile4'}, u'008': {'downfile': u'file8', 'uppath': 'C:/TMP/upfile8', 'localpath': 'C:/TMP/file8', 'serverip': u'124.1.1.8', 'clientip': u'192.168.100.104', 'upfile': u'upfile8'}} 
+2017-08-24 11:34:37,967 - test -INFO - Ftp setting start
+2017-08-24 11:42:25,966 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'123', u'ulfile': u'ftp1x', u'chost': u'192.168.107.220', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001 002 003 004 005 006'} 
+2017-08-24 11:42:25,967 - test -INFO - UE args is {u'003': {'downfile': u'file3', 'uppath': 'C:/TMP/upfile3', 'localpath': 'C:/TMP/file3', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.39', 'upfile': u'upfile3'}, u'002': {'downfile': u'file2', 'uppath': 'C:/TMP/upfile2', 'localpath': 'C:/TMP/file2', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.38', 'upfile': u'upfile2'}, u'001': {'downfile': u'file1', 'uppath': 'F:/TMP/upfile1', 'localpath': 'F:/TMP/file1', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.37', 'upfile': u'upfile1'}, u'007': {'downfile': u'file7', 'uppath': 'C:/TMP/upfile7', 'localpath': 'C:/TMP/file7', 'serverip': u'124.1.1.7', 'clientip': u'192.168.100.104', 'upfile': u'upfile7'}, u'006': {'downfile': u'file6', 'uppath': 'C:/TMP/upfile6', 'localpath': 'C:/TMP/file6', 'serverip': u'192.168.9.76', 'clientip': u'192.168.107.209', 'upfile': u'upfile6'}, u'005': {'downfile': u'file5', 'uppath': 'C:/TMP/upfile5', 'localpath': 'C:/TMP/file5', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.41', 'upfile': u'upfile5'}, u'004': {'downfile': u'file4', 'uppath': 'C:/TMP/upfile4', 'localpath': 'C:/TMP/file4', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.40', 'upfile': u'upfile4'}, u'008': {'downfile': u'file8', 'uppath': 'C:/TMP/upfile8', 'localpath': 'C:/TMP/file8', 'serverip': u'124.1.1.8', 'clientip': u'192.168.100.104', 'upfile': u'upfile8'}} 
+2017-08-24 11:42:25,967 - test -INFO - Ftp setting start
+2017-08-24 11:42:26,436 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:42:26,753 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:42:27,071 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:42:27,365 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:42:27,661 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:42:27,963 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:42:28,263 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:42:28,572 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:42:28,865 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:42:29,181 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:42:29,496 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:42:29,799 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:42:30,101 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:42:30,424 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:42:30,720 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:42:31,039 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:42:31,357 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:42:31,694 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:42:32,002 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:42:32,315 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:42:32,614 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:42:32,914 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:42:33,211 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:42:33,529 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:42:33,851 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:42:34,168 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:42:34,476 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:42:34,789 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:42:35,119 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:42:35,430 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:42:35,724 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:42:36,046 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:42:36,344 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:42:36,664 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:42:36,966 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:42:37,265 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:42:37,265 - test -INFO - Ftp test is start
+2017-08-24 11:42:51,638 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'123', u'ulfile': u'ftp1x', u'chost': u'192.168.107.220', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001 002 003 004 005 006'} 
+2017-08-24 11:42:51,640 - test -INFO - UE args is {u'003': {'downfile': u'file3', 'uppath': 'C:/TMP/upfile3', 'localpath': 'C:/TMP/file3', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.39', 'upfile': u'upfile3'}, u'002': {'downfile': u'file2', 'uppath': 'C:/TMP/upfile2', 'localpath': 'C:/TMP/file2', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.38', 'upfile': u'upfile2'}, u'001': {'downfile': u'file1', 'uppath': 'F:/TMP/upfile1', 'localpath': 'F:/TMP/file1', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.37', 'upfile': u'upfile1'}, u'007': {'downfile': u'file7', 'uppath': 'C:/TMP/upfile7', 'localpath': 'C:/TMP/file7', 'serverip': u'124.1.1.7', 'clientip': u'192.168.100.104', 'upfile': u'upfile7'}, u'006': {'downfile': u'file6', 'uppath': 'C:/TMP/upfile6', 'localpath': 'C:/TMP/file6', 'serverip': u'192.168.9.76', 'clientip': u'192.168.107.209', 'upfile': u'upfile6'}, u'005': {'downfile': u'file5', 'uppath': 'C:/TMP/upfile5', 'localpath': 'C:/TMP/file5', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.41', 'upfile': u'upfile5'}, u'004': {'downfile': u'file4', 'uppath': 'C:/TMP/upfile4', 'localpath': 'C:/TMP/file4', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.40', 'upfile': u'upfile4'}, u'008': {'downfile': u'file8', 'uppath': 'C:/TMP/upfile8', 'localpath': 'C:/TMP/file8', 'serverip': u'124.1.1.8', 'clientip': u'192.168.100.104', 'upfile': u'upfile8'}} 
+2017-08-24 11:42:51,640 - test -INFO - Ftp setting start
+2017-08-24 11:42:51,640 - test -INFO - Ftp test is start
+2017-08-24 11:42:58,168 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'123', u'ulfile': u'ftp1x', u'chost': u'192.168.107.220', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001 002 003 004 005 006'} 
+2017-08-24 11:42:58,171 - test -INFO - UE args is {u'003': {'downfile': u'file3', 'uppath': 'C:/TMP/upfile3', 'localpath': 'C:/TMP/file3', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.39', 'upfile': u'upfile3'}, u'002': {'downfile': u'file2', 'uppath': 'C:/TMP/upfile2', 'localpath': 'C:/TMP/file2', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.38', 'upfile': u'upfile2'}, u'001': {'downfile': u'file1', 'uppath': 'F:/TMP/upfile1', 'localpath': 'F:/TMP/file1', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.37', 'upfile': u'upfile1'}, u'007': {'downfile': u'file7', 'uppath': 'C:/TMP/upfile7', 'localpath': 'C:/TMP/file7', 'serverip': u'124.1.1.7', 'clientip': u'192.168.100.104', 'upfile': u'upfile7'}, u'006': {'downfile': u'file6', 'uppath': 'C:/TMP/upfile6', 'localpath': 'C:/TMP/file6', 'serverip': u'192.168.9.76', 'clientip': u'192.168.107.209', 'upfile': u'upfile6'}, u'005': {'downfile': u'file5', 'uppath': 'C:/TMP/upfile5', 'localpath': 'C:/TMP/file5', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.41', 'upfile': u'upfile5'}, u'004': {'downfile': u'file4', 'uppath': 'C:/TMP/upfile4', 'localpath': 'C:/TMP/file4', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.40', 'upfile': u'upfile4'}, u'008': {'downfile': u'file8', 'uppath': 'C:/TMP/upfile8', 'localpath': 'C:/TMP/file8', 'serverip': u'124.1.1.8', 'clientip': u'192.168.100.104', 'upfile': u'upfile8'}} 
+2017-08-24 11:42:58,171 - test -INFO - Ftp setting start
+2017-08-24 11:42:58,477 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:42:58,776 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:42:59,055 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:42:59,367 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:42:59,674 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:42:59,980 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:43:00,273 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:43:00,575 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:43:00,874 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:43:01,207 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:43:01,532 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:43:01,832 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:43:02,244 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:43:02,585 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:43:02,888 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:43:03,190 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:43:03,483 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:43:03,802 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:43:04,111 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:43:04,421 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:43:04,713 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:43:05,019 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:43:05,339 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:43:05,648 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:43:05,977 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:43:06,282 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:43:06,575 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:43:06,888 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:43:07,187 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:43:07,486 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:43:07,805 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:43:08,111 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:43:08,405 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:43:08,713 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:43:09,003 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:43:09,305 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:43:09,305 - test -INFO - Ftp test is start
+2017-08-24 11:49:37,346 - test -INFO - Ftp args is {u'fhost': u'192.168.9.76', u'ftpuser': u'ftpuser', u'log': u'Result/rate.csv', u'dlfile': u'ftp0x', u'cport': u'27149', u'ftppw': u'123', u'ulfile': u'ftp1x', u'chost': u'192.168.107.220', u'csshpw': u'root123', u'ftpip': u'123.1.1.x', u'fsshpw': u'baicells', u'dotest': u'001 002 003 004 005 006'} 
+2017-08-24 11:49:37,348 - test -INFO - UE args is {u'003': {'downfile': u'file3', 'uppath': 'C:/TMP/upfile3', 'localpath': 'C:/TMP/file3', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.39', 'upfile': u'upfile3'}, u'002': {'downfile': u'file2', 'uppath': 'C:/TMP/upfile2', 'localpath': 'C:/TMP/file2', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.38', 'upfile': u'upfile2'}, u'001': {'downfile': u'file1', 'uppath': 'F:/TMP/upfile1', 'localpath': 'F:/TMP/file1', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.37', 'upfile': u'upfile1'}, u'007': {'downfile': u'file7', 'uppath': 'C:/TMP/upfile7', 'localpath': 'C:/TMP/file7', 'serverip': u'124.1.1.7', 'clientip': u'192.168.100.104', 'upfile': u'upfile7'}, u'006': {'downfile': u'file6', 'uppath': 'C:/TMP/upfile6', 'localpath': 'C:/TMP/file6', 'serverip': u'192.168.9.76', 'clientip': u'192.168.107.209', 'upfile': u'upfile6'}, u'005': {'downfile': u'file5', 'uppath': 'C:/TMP/upfile5', 'localpath': 'C:/TMP/file5', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.41', 'upfile': u'upfile5'}, u'004': {'downfile': u'file4', 'uppath': 'C:/TMP/upfile4', 'localpath': 'C:/TMP/file4', 'serverip': u'192.168.9.76', 'clientip': u'192.168.9.40', 'upfile': u'upfile4'}, u'008': {'downfile': u'file8', 'uppath': 'C:/TMP/upfile8', 'localpath': 'C:/TMP/file8', 'serverip': u'124.1.1.8', 'clientip': u'192.168.100.104', 'upfile': u'upfile8'}} 
+2017-08-24 11:49:37,348 - test -INFO - Ftp setting start
+2017-08-24 11:49:37,661 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:49:37,980 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:49:38,280 - test -INFO - fhost CELL set route sucessfull
+2017-08-24 11:49:38,592 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:49:38,911 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:49:39,233 - test -INFO - ftpuser CELL set route sucessfull
+2017-08-24 11:49:39,558 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:49:39,871 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:49:40,197 - test -INFO - log CELL set route sucessfull
+2017-08-24 11:49:40,499 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:49:40,799 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:49:41,132 - test -INFO - dlfile CELL set route sucessfull
+2017-08-24 11:49:41,433 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:49:41,753 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:49:42,061 - test -INFO - cport CELL set route sucessfull
+2017-08-24 11:49:42,339 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:49:42,618 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:49:42,897 - test -INFO - ftppw CELL set route sucessfull
+2017-08-24 11:49:43,178 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:49:43,484 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:49:43,812 - test -INFO - ulfile CELL set route sucessfull
+2017-08-24 11:49:44,138 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:49:44,437 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:49:44,740 - test -INFO - chost CELL set route sucessfull
+2017-08-24 11:49:45,038 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:49:45,339 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:49:45,654 - test -INFO - csshpw CELL set route sucessfull
+2017-08-24 11:49:45,994 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:49:46,319 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:49:46,627 - test -INFO - ftpip CELL set route sucessfull
+2017-08-24 11:49:46,940 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:49:47,256 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:49:47,565 - test -INFO - fsshpw CELL set route sucessfull
+2017-08-24 11:49:47,884 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:49:48,186 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:49:48,483 - test -INFO - dotest CELL set route sucessfull
+2017-08-24 11:49:48,484 - test -INFO - Ftp test is start
