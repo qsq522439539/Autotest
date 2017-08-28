@@ -375,7 +375,7 @@ class TestWindow(QDialog):
                 pass
 
     def createbutton(self):
-        self.defaultbutton = QtGui.QPushButton(u"默认")
+        self.defaultbutton = QtGui.QPushButton(u"帮助")
         self.connect(self.defaultbutton, QtCore.SIGNAL('clicked()'),
                      self.Ondefault)
         self.helpbutton = QtGui.QPushButton(u"状态监控")
@@ -414,10 +414,10 @@ class TestWindow(QDialog):
         acer2 = QtGui.QSpacerItem(50,10)
 
         footer2Layout = QHBoxLayout()
-        #footer1Layout.addWidget(self.helpbutton)
-       # footer1Layout.addWidget(self.defaultbutton)
-        baseLayout.addItem(acer1, i+5,0)
-        baseLayout.addItem(acer2, i+5,1)
+        footer1Layout.addWidget(self.helpbutton)
+        footer1Layout.addWidget(self.defaultbutton)
+        # baseLayout.addItem(acer1, i+5,0)
+        # baseLayout.addItem(acer2, i+5,1)
         footer2Layout.addWidget(self.setallbutton)
         footer2Layout.addWidget(self.setbutton)
 
@@ -428,8 +428,16 @@ class TestWindow(QDialog):
         self.setLayout(baseLayout)
 
     def Ondefault(self):
-        print self.DLUL
-        print self.dolist
+        QtGui.QMessageBox.about(self, u'关于MultiUe',u"MuliteUe是进行多UE业务测试的工具。\n\n\
+本工具支持以下功能：\n\
+  1．支持多UE(最多达96UE)FTP上传/下载业务测试；\n\
+  2．支持测试时长设定;\n\
+  3. 支持测试过程因异常业务中断后的自动恢复;\n\
+  4．支持定制UE扩展和定制；\n\
+  5．支持多种指标的状态监控；\n\
+  6. 支持业务测试和监控的独立运行;\n\n\n\n\
+本工具使用权属于：北京佰才邦技术有限公司\n\
+Copyright (c) Baicells Technologies Co. Ltd.")
 
     def Onhelp(self):
         self.checkwin.show()
@@ -446,6 +454,7 @@ class TestWindow(QDialog):
     def Onsetall(self):
         for check in self.cellbox[0:32]:
             check.setChecked(True)
+
    
 class MainWindow(QtGui.QMainWindow):  
     def __init__(self,cpeiplist,ftpiplist,celllist,ftpargs, ueargs):
@@ -457,7 +466,7 @@ class MainWindow(QtGui.QMainWindow):
         self.ueargs = ueargs
         QtGui.QMainWindow.__init__(self)  
 
-        self.setWindowTitle(u"业务测试")
+        self.setWindowTitle(u"Baicells业务测试工具")
         palette1 = QtGui.QPalette()
         palette1.setColor(self.backgroundRole(), QColor("#D8BFD8"))
         tabs = QtGui.QTabWidget(self)  
@@ -469,9 +478,9 @@ class MainWindow(QtGui.QMainWindow):
         tabs.addTab(self.tab1,u"测试设置")  
         tabs.addTab(self.tab2,u"监控设置")  
         #sconsole.resize(900,750)
-        tabs.resize(1090, 750)
-        self.tab2.resize(1100, 750)
-        self.resize(1100, 750)
+        tabs.resize(1190, 750)
+        self.tab2.resize(1200, 750)
+        self.resize(1132, 736)
        # desktop = QtGui.QApplication.desktop()
         #rect = desktop.availableGeometry()
         #self.setGeometry(rect)

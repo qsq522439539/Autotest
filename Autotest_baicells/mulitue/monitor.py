@@ -1345,7 +1345,7 @@ class SetMonitor(QDialog):
     def Layout(self):
         baseLayout = QGridLayout()
         acer1 = QtGui.QSpacerItem(10,24)
-        acer2 = QtGui.QSpacerItem(700,10)
+        acer2 = QtGui.QSpacerItem(756,10)
         # title
         baseLayout.addWidget(self.celllabel, 0,0)
         baseLayout.addWidget(self.uelabel, 17,0)
