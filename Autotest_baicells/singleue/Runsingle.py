@@ -369,7 +369,7 @@ class FtpStress(FTP):
 				time.sleep(60)
 				self.repair(chost)
 		return True
-
+	
 	def dogetrate(self,alert,expectspeed,hostname,username, password, port):
 		cmd = "grep dlTtlTpt /tmp/log/syslog | awk -F ' ' '{print $7,$9}' | tr -d 'ulTtlTpt=dlTtlTpt=' | tail -n 1 | tr -d '\n'"
 		try:
@@ -593,20 +593,21 @@ class FtpStress(FTP):
 		return
 
 	def sendalert(self,alarttype,error,host="",mfile="123.mp3"): #告警方式
-		if alarttype is "V": #音乐
-			pass
-		# music = threading.Thread(target=self._playmp3,name="music",args=("123.mp3",))
-		# music.start()
-		elif alarttype is "M": #邮件
-			mail = threading.Thread(target=self.send_mail,name="mail",args=(host,error))
-			mail.start()
-		elif alarttype is "A": #都有
-			pass
-			#music = threading.Thread(target=self._playmp3,name="music",args=("123.mp3"))
-			#music.start()
-		mail = threading.Thread(target=self.send_mail,name="mail",args=(host,error))
-		mail.start()
-
+		# if alarttype is "V": #音乐
+		# 	pass
+		# # music = threading.Thread(target=self._playmp3,name="music",args=("123.mp3",))
+		# # music.start()
+		# elif alarttype is "M": #邮件
+		# 	mail = threading.Thread(target=self.send_mail,name="mail",args=(host,error))
+		# 	mail.start()
+		# elif alarttype is "A": #都有
+		# 	pass
+		# 	#music = threading.Thread(target=self._playmp3,name="music",args=("123.mp3"))
+		# 	#music.start()
+		# mail = threading.Thread(target=self.send_mail,name="mail",args=(host,error))
+		# mail.start()
+		pass
+	
 	def makezip(self,resultfile,srcdirectory):
 		f = zipfile.ZipFile(resultfile,'w',zipfile.ZIP_DEFLATED)
 		for dirpath, dirnames, filenames in os.walk(srcdirectory):
@@ -1121,6 +1122,7 @@ class MainWindow(QDialog):
 		pass
 
 	def Onhelp(self):
+		self.checkwin = CheckWindow(self.dolist)
 		self.checkwin.show()
 		
 	def Onstart(self):
@@ -1196,6 +1198,80 @@ def settestroute(celllist, ftpargs):
 	"""
 	return None
 	
+def open_root_permissions(hostname, password="admin", adminpassword="qpa;10@(", port=27149):
+	try:
+		client = paramiko.SSHClient()
+		client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+		client.connect(hostname, int(port), "root", "root123")
+	except:
+		pass
+	cmd_profile = "source /etc/profile;"
+	port = int(port)
+	client = paramiko.SSHClient()
+	client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+	client.connect(hostname, port, "admin", password)
+	stdin_read_write1, stdout_read_write1, stderr_read_write1 = client.exec_command(cmd_profile)
+	
+	ssh = client.invoke_shell()
+	time.sleep(1)
+	
+	ssh.send('admin')
+	ssh.send('\n')
+	buff = ''
+	while not buff.strip().endswith('passwd:'):
+		resp = ssh.recv(65535)
+		buff += str(resp)
+	print buff
+	ssh.send(adminpassword)
+	ssh.send('\n')
+	buff = ''
+	while not buff.strip().endswith('#'):
+		resp = ssh.recv(65535)
+		buff += str(resp)
+	print buff
+	
+	ssh.send('start-shell')
+	ssh.send('\n')
+	buff = ''
+	while not buff.strip().endswith('$'):
+		resp = ssh.recv(65535)
+		buff += str(resp)
+	print buff
+	
+	ssh.send('sudo su root')
+	ssh.send('\n')
+	buff = ''
+	while not buff.strip().endswith('#'):
+		resp = ssh.recv(65535)
+		buff += str(resp)
+	print buff
+	
+	ssh.send('sed -i "s/PermitRootLogin no/PermitRootLogin yes/g" /etc/ssh/sshd_config')
+	ssh.send('\n')
+	buff = ''
+	while not buff.strip().endswith('#'):
+		resp = ssh.recv(65535)
+		buff += str(resp)
+	print buff
+	
+	ssh.send('cd /etc/init.d')
+	ssh.send('\n')
+	buff = ''
+	while not buff.strip().endswith('#'):
+		resp = ssh.recv(65535)
+		buff += str(resp)
+	print buff
+	
+	ssh.send('./sshd restart')
+	ssh.send('\n')
+	buff = ''
+	while not buff.strip().endswith('#'):
+		resp = ssh.recv(65535)
+		buff += str(resp)
+	print buff
+	client.close()
+
+
 if __name__ == "__main__":
 	#创建result文件夹
 	if not os.path.exists("Result"):
@@ -1219,6 +1295,8 @@ if __name__ == "__main__":
 	#加路由
 	settestroute(celllist, ftpargs)
 	logger.info("Ftp test is start")
+	for host in celllist:
+		open_root_permissions(host)
 	app = QApplication(sys.argv)
 	form = MainWindow(celllist,ftpargs, ueargs)
 	form.show()

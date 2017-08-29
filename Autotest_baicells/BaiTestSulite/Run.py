@@ -19,13 +19,14 @@ class TestDrive(ParXls):
         self.ueargs= parxml.get_xml_data('args.xml')
         self.testsuite = self._gettestlist()
         self.logger.info(self.testsuite)
-         
 
     def _runtest(self,casename,resultindex):
         self.logger.info("%s case is start test" % casename)
         casenamenew = casename.split(".")
         casenamenew = "".join(casenamenew)
+        #动态加载casenamenew.py
         job = __import__('%s' % casenamenew)
+        print job
         try:
             runjob = job.DoTest(self.ftpargs,self.ueargs)
             result = runjob._runtest()
@@ -37,12 +38,14 @@ class TestDrive(ParXls):
 
     def _Run(self):
         self._get_args()
+        #用例名称，列表形式
         testlist = self.testsuite.keys()
         print testlist
+        #排序
         testlist.sort()
         for casename in testlist:
+            #testsuite[casename] -> u'WB.PF.38': [2, 3]
             self._runtest(casename,self.testsuite[casename])
-
 
 def setloger():
     timenow = time.strftime('%Y_%m_%d_%H_%M_%S')

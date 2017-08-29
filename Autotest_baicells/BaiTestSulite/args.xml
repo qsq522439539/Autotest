@@ -9,13 +9,13 @@
       <comonlabel>fhost fsshpw ftpuser ftppw chost csshpw cport ftpip dlfile ulfile log adminpw</comonlabel>
     </info>  
     <ftpserver>
-      <fhost>192.168.9.57</fhost>
+      <fhost>192.168.9.76</fhost>
       <!--ftp server ip-->
       <fsshpw>baicells</fsshpw>
       <!--ftp server  root password--> 
       <ftpuser>ftpuser</ftpuser>  
       <!-- ftpuser name -->  
-      <ftppw>123</ftppw>  
+      <ftppw>baicells</ftppw>
       <!--ftp password-->
       <log>Result/rate.csv</log>
       <!--ftp test rate log-->
@@ -27,7 +27,7 @@
       <!--ftp upfile -->
     </ftpserver>
     <cell>
-      <chost>192.168.107.237</chost>
+      <chost>192.168.107.220</chost>
       <!--cell ip-->
       <csshpw>root123</csshpw>  
       <!--cell ssh password-->  
@@ -36,9 +36,9 @@
       <adminpw>admin</adminpw>
     </cell> 
     <ues>
-        <ue id="460680004800049">
-            <cpeip>109.10.10.7</cpeip>
-            <serverip>192.168.9.79</serverip>
+        <ue id="460680004700081">
+            <cpeip>109.10.10.20</cpeip>
+            <serverip>192.168.9.76</serverip>
             <downfile>300mfile_1.txt</downfile>
             <localpath>E:/TMP/300mfile_1.txt</localpath>
             <upfile>upfile123</upfile> 

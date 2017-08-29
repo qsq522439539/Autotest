@@ -67,25 +67,25 @@ class FtpStress(FTP):
     def ConnectFTP(self,remoteip,loginname,loginpassword):    
 	try:
             ftp=FtpStress()
-	    ftp.connect(remoteip,21,600)    
+	    ftp.connect(remoteip,21,600)
 	except Exception, e:
 	    self.logger.error("%s conncet failed - %s" % (remoteip,e))
-	    return (0,'conncet failed')    
-	else:    
-	    try:    
-		ftp.login(loginname,loginpassword)     
+	    return (0,'conncet failed')
+	else:
+	    try:
+		ftp.login(loginname,loginpassword)
 	    except Exception, e:
 		self.logger.error('%s login failed - %s' % (remoteip,e))
-		return (0,'login failed')    
+		return (0,'login failed')
 	    else:
-		return (1,ftp)    
+		return (1,ftp)
 		
     def download(self,starttime,testtime,host,username,password,remotepath,localpath):    
 	#connect to the FTP Server and check the return
         try:
-	    res = self.ConnectFTP(host,username,password)    
+	    res = self.ConnectFTP(host,username,password)
 	    if(res[0]!=1):
-	        return "ERROR1"	 
+	        return "ERROR1"
 	    ftp=res[1]
 	    dires = self.splitpath(remotepath)
 	except:
@@ -98,7 +98,7 @@ class FtpStress(FTP):
                 ftp.set_pasv(False)
                 pass
         try:
-	    remotefile=dires[1]     # remote file name	
+	    remotefile=dires[1]     # remote file name
 	    blocksize=1024 * 1024
 	    ftp.voidcmd('TYPE I')
 	    conn = ftp.transfercmd('RETR ' + remotefile)
@@ -112,7 +112,7 @@ class FtpStress(FTP):
 	    except:
                 return "ERROR2"
 	    if not data:
-		break 
+		break
 	    #lwrite.write(data)
 	#lwrite.close()
 	try:
@@ -210,8 +210,8 @@ class FtpStress(FTP):
     def _Upload_FTP(self,chost,testtime, remotepath,localpath,
                     host, username, password):
 	'''
-	FTP upload service.	
-	host: the conneced host IP address	
+	FTP upload service.
+	host: the conneced host IP address
 	username: login host name
 	password: login host password
 	remotepath: storage path of download file
@@ -487,7 +487,7 @@ class MainWindow(QtGui.QMainWindow):
         
         #禁止最大化  
         self.setWindowFlags(QtCore.Qt.WindowMinimizeButtonHint)
-        self.setFixedSize(self.width(), self.height());   
+        self.setFixedSize(self.width(), self.height())
         self.show()  
           
 

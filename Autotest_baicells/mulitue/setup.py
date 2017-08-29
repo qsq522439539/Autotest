@@ -181,8 +181,7 @@ def open_root_permissions(hostname="192.168.9.149",password="admin",adminpasswor
     try:
         client=paramiko.SSHClient()
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        client.connect(hostname, int(port), "root", "root123")	
-        client.close()
+        client.connect(hostname, int(port), "root", "root123")
         return
     except:
         pass

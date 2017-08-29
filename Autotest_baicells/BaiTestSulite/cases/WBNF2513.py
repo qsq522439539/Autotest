@@ -71,7 +71,7 @@ class DoTest():
         uenum = test.ue_count_check()
         test.tear_down()
         if uenum < 32:
-            self.logger.info("There is some ue is unconnect,now uecounts is %s" % unnum)
+            self.logger.info("There is some ue is unconnect,now uecounts is %s" % uenum)
             return False
         job = TestPerformance()
         result = job.uepingtest(self.ftpiplist)

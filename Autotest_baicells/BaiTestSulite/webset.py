@@ -21,10 +21,12 @@ class WebSetKeyword():
 
     def __init__(self,address):
         self.driver = webdriver.Chrome()
+        #打开浏览器
         self.driver.get(address)
         self.driver.maximize_window()
         self.logger = logging.getLogger('test')
-
+        
+    #定位元素
     def local_element_by_xpath(self,locator,timeout=TIMEOUT):
         for i in range(TIMEOUT):
             try:
@@ -37,7 +39,8 @@ class WebSetKeyword():
                 time.sleep(1)
         self.logger.error("Wait by visibility_of %s faild"  % locator)
         return None
-
+    
+    #输入元素
     def element_input(self,locator,text,timeout=TIMEOUT):
         try:
             element = self.local_element_by_xpath(locator,timeout)
@@ -45,7 +48,8 @@ class WebSetKeyword():
             element.send_keys(text)
         except:
             return False
-
+        
+    #列表选择by label
     def select_from_list_by_label(self,locator,*labels):
         if not labels:
             self.logger.error("No value given.")
@@ -53,7 +57,8 @@ class WebSetKeyword():
         select = self._get_select_list(locator)
         for label in labels:
             select.select_by_visible_text(label)
-
+            
+    #列表选择by value
     def select_from_list_by_value(self,locator, *values):
         if not values:
             self.logger.error("No value given.")
@@ -61,12 +66,14 @@ class WebSetKeyword():
         select = self._get_select_list(locator)
         for value in values:
             select.select_by_value(value)
-
+    
+    #等待弹窗出现
     def wait_until_alert_is_present(self,timeout=TIMEOUT,close=True):
         alert = WebDriverWait(self.driver,TIMEOUT).until(EC.alert_is_present())
         if close:
             alert.accept()
-
+    
+    #等待元素不可见
     def wait_until_element_not_visable(self,locator,timeout=TIMEOUT):
         def exit_element():
             try:
@@ -84,21 +91,25 @@ class WebSetKeyword():
                 return
             else:
                 time.sleep(3)
-
+    
+    #判断是否被选中
     def checkbox_selected_status(self,locator,timeout=TIMEOUT):
         element = self.local_element_by_xpath(locator,timeout)
         if element.is_selected():
             return "1"
         else:
             return "0"
-
+    
+    #通过select选项的索引来定位选择对应选项（从0开始计数），如选择第三个选项:select_by_index(2)
     def _get_select_list(self,locator):
         se = self.local_element_by_xpath(locator,TIMEOUT)
         return Select(se)
-
+    
+    #完成并开始回收初始化数据垃圾
     def tear_down(self):
         self.driver.close()
-
+    
+    #获取表格行数
     def get_table_rowcnt(self,locator,timeout):
         table = self.local_element_by_xpath(locator,timeout)
         if table is not None:
@@ -106,7 +117,8 @@ class WebSetKeyword():
             return len(table_rows)
         else:
             return 0
-
+    
+    #获取表格
     def get_table_cells(self,locator,timeout):
         table = self.local_element_by_xpath(locator,timeout)
         cells = []
@@ -126,14 +138,17 @@ class WebSetKeyword():
                 cells.append(columlist)
             return cells
         return None
-
+    
+    #获取文本
     def get_text(self,locator,timeout=TIMEOUT):
         return self.local_element_by_xpath(locator,timeout).text
     
+    #获取值
     def get_value(self,locator,timeout=TIMEOUT):
         element = self.local_element_by_xpath(locator,timeout)
         return element.get_attribute('value') if element is not None else None
-
+    
+    #等待元素可以被点击
     def wait_until_element_is_clickable(self,locator, timeout=TIMEOUT):
         element = WebDriverWait(self.driver, timeout).until(
                   EC.element_to_be_clickable((By.XPATH,locator)))
@@ -143,12 +158,14 @@ class WebSetKeyword():
         self.element_input("//*[@id='password']","admin",TIMEOUT)
         self.local_element_by_xpath("//*[@id='log_button']",TIMEOUT).click()
         #self.local_element_by_xpath("//*[@id='header_login']/div[3]/span/input",TIMEOUT).click()
-
+    
+    #重启
     def do_reboot(self):
         self.local_element_by_xpath("//*[@id='Loki_reboot']",TIMEOUT).click()
         self.local_element_by_xpath("//*[@id='reboot_button']",TIMEOUT).click()
         self.wait_until_element_not_visable("//*[@id='wait_icon']/img",300)
-
+    
+    #接受弹窗
     def accept_alert(self,num):
         for i in range(num):
             self.wait_until_alert_is_present(TIMEOUT,True)
@@ -223,6 +240,7 @@ class LmtSeting(WebSetKeyword):
         self.element_input("//*[@id='LTE_LGW_FIRST_STATIC_IP_ADDRESS']",ipset[0])
         self.element_input("//*[@id='LTE_LGW_LAST_STATIC_IP_ADDRESS']",ipset[1])
         imsitable = self.get_table_cells("//*[@id='right_subnet_table']",TIMEOUT)
+        #移除MMEIP
         if imsitable is not None:
             for i in range(len(imsitable)-1):
                 self.local_element_by_xpath("//*[@id='right_subnet_table']/tbody/tr[2]/td[2]/input",TIMEOUT).click()

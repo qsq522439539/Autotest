@@ -212,6 +212,12 @@ class GetConfig():
             imsilist.append(ueinfo['id'])
         return imsilist
     
-                
+'''xml预定义实体引用
+&lt;	<	less than
+&gt;	>	greater than
+&amp;	&	ampersand
+&apos;	'	apostrophe
+&quot;	"	quotation mark
+'''
 
 

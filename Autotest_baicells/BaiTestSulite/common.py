@@ -229,6 +229,7 @@ class TestPerformance:
     def _ping_test(self, testtime, targetaddress, size, tmplog):
         testtime=int(testtime)
         testcmd = "ping %s -l %s -t" % (targetaddress,size)
+        #调用系统命令
         p = subprocess.Popen(testcmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         starttime = time.time()
         while time.time() - starttime < testtime:
