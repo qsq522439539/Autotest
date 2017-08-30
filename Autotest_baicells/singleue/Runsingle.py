@@ -1203,6 +1203,7 @@ def open_root_permissions(hostname, password="admin", adminpassword="qpa;10@(", 
 		client = paramiko.SSHClient()
 		client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 		client.connect(hostname, int(port), "root", "root123")
+		return
 	except:
 		pass
 	cmd_profile = "source /etc/profile;"
@@ -1292,11 +1293,11 @@ if __name__ == "__main__":
 	celllist = []
 	for idnum in dolist:
 		celllist.append(ueargs[idnum]["clientip"])
-	#加路由
-	settestroute(celllist, ftpargs)
-	logger.info("Ftp test is start")
 	for host in celllist:
 		open_root_permissions(host)
+	# 加路由
+	settestroute(celllist, ftpargs)
+	logger.info("Ftp test is start")
 	app = QApplication(sys.argv)
 	form = MainWindow(celllist,ftpargs, ueargs)
 	form.show()
