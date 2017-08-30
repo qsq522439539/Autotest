@@ -54,9 +54,9 @@ MAILIST = ["lipeng-T@baicells.com","zangmingming@baicells.com","gaohanjian@baice
 HOMEDIR = sys.path[0]
 
 # cell route
-CELLROTE= ["if route -n  | grep -q 192.168.9.46;then :;else route add -net 10.0.10.0/24 gw 192.168.9.46;fi",
-		   "if route -n  | grep -q 192.168.9.56;then :;else route add -net 100.0.100.0/24 gw 192.168.9.56;fi",
-		   "if route -n  | grep -q 192.168.9.76;then :;else route add -net 124.1.1.0/24 gw 192.168.9.76;fi"]
+CELLROTE= ["if route -n  | grep -q 192.168.9.46;then :;else route add -net 10.0.10.0/24 gw 192.168.9.46;fi \
+			&& if route -n  | grep -q 192.168.9.56;then :;else route add -net 100.0.100.0/24 gw 192.168.9.56;fi \
+		    && if route -n  | grep -q 192.168.9.76;then :;else route add -net 124.1.1.0/24 gw 192.168.9.76;fi"]
 
 # FTP route
 FTPROUTE1 = "route add -net 10.10.10.0/24 gw 192.168.9.42"
