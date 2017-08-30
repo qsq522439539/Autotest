@@ -84,22 +84,6 @@
             <ufile>upfile6</ufile>
             <uppath>C:/TMP/upfile6</uppath>
         </ue>
-        <ue id="007">
-            <clientip>192.168.100.104</clientip>
-            <serverip>124.1.1.7</serverip>
-            <downfile>file7</downfile>
-            <localpath>C:/TMP/file7</localpath>
-            <ufile>upfile7</ufile>
-            <uppath>C:/TMP/upfile7</uppath>
-        </ue>
-        <ue id="008">
-            <clientip>192.168.100.104</clientip>
-            <serverip>124.1.1.8</serverip>
-            <downfile>file8</downfile>
-            <localpath>C:/TMP/file8</localpath>
-            <ufile>upfile8</ufile>
-            <uppath>C:/TMP/upfile8</uppath>
-        </ue>
     </ues>
   </list> 
 </test>
