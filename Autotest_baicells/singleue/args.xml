@@ -77,7 +77,7 @@
             <uppath>C:/TMP/upfile5</uppath>
         </ue>
         <ue id="006">
-            <clientip>192.168.107.209</clientip>
+            <clientip>192.168.107.221</clientip>
             <serverip>192.168.9.76</serverip>
             <downfile>file6</downfile>
             <localpath>C:/TMP/file6</localpath>
